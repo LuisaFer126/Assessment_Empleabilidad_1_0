@@ -1,0 +1,11 @@
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\bin\Debug\net9.0\CoursePlatform.Domain.deps.json
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\bin\Debug\net9.0\CoursePlatform.Domain.dll
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\bin\Debug\net9.0\CoursePlatform.Domain.pdb
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\obj\Debug\net9.0\CoursePlatform.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\obj\Debug\net9.0\CoursePlatform.Domain.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\obj\Debug\net9.0\CoursePlatform.Domain.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\obj\Debug\net9.0\CoursePlatform.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\obj\Debug\net9.0\CoursePlatform.Domain.dll
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\obj\Debug\net9.0\refint\CoursePlatform.Domain.dll
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\obj\Debug\net9.0\CoursePlatform.Domain.pdb
+C:\Users\ASUS\Desktop\CoursePlatform_fixed\Backend\src\CoursePlatform.Domain\obj\Debug\net9.0\ref\CoursePlatform.Domain.dll
