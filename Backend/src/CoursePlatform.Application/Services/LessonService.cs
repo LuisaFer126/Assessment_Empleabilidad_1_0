@@ -91,6 +91,8 @@ public class LessonService : ILessonService
         var otherLesson = (await _lessonRepository.GetByCourseIdAsync(lesson.CourseId))
                             .FirstOrDefault(l => l.Order == newOrder);
 
+        var now = DateTime.UtcNow;
+
         if (otherLesson != null)
         {
             // Swap orders without ever producing duplicates.
@@ -98,12 +100,15 @@ public class LessonService : ILessonService
             const int tempOrder = int.MinValue;
 
             otherLesson.Order = tempOrder;
+            otherLesson.UpdatedAt = now;
             await _lessonRepository.UpdateAsync(otherLesson);
 
             lesson.Order = newOrder;
+            lesson.UpdatedAt = now;
             await _lessonRepository.UpdateAsync(lesson);
 
             otherLesson.Order = oldOrder;
+            otherLesson.UpdatedAt = now;
             await _lessonRepository.UpdateAsync(otherLesson);
         }
         else
@@ -111,6 +116,7 @@ public class LessonService : ILessonService
             // Just move to empty slot
             // But constraint says unique. If there's a gap, it is fine-ish.
             lesson.Order = newOrder;
+            lesson.UpdatedAt = now;
             await _lessonRepository.UpdateAsync(lesson);
         }
     }

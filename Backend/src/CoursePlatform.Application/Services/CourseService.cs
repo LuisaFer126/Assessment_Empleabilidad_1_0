@@ -115,6 +115,21 @@ public class CourseService : ICourseService
         var course = await _courseRepository.GetCourseWithLessonsAsync(id);
         if (course == null) return null;
 
-        return new CourseSummaryDto(course.Id, course.Title, course.Lessons.Count(), course.UpdatedAt);
+        var totalLessons = course.Lessons.Count();
+        var lastLessonModified = totalLessons == 0
+            ? (DateTime?)null
+            : course.Lessons.Max(l => l.UpdatedAt);
+
+        var lastModified = lastLessonModified.HasValue && lastLessonModified.Value > course.UpdatedAt
+            ? lastLessonModified.Value
+            : course.UpdatedAt;
+
+        return new CourseSummaryDto(
+            course.Id,
+            course.Title,
+            course.Status,
+            totalLessons,
+            lastModified
+        );
     }
 }

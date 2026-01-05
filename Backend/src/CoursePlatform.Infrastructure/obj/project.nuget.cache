@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LGHw1No/S4E=",
+  "dgSpecHash": "icTIbFbKqvk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Infrastructure\\CoursePlatform.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Infrastructure\\CoursePlatform.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.0\\microsoft.aspnetcore.cryptography.internal.9.0.0.nupkg.sha512",

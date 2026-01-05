@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Application\\CoursePlatform.Application.csproj": {}
+    "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Application\\CoursePlatform.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Application\\CoursePlatform.Application.csproj": {
+    "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Application\\CoursePlatform.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Application\\CoursePlatform.Application.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Application\\CoursePlatform.Application.csproj",
         "projectName": "CoursePlatform.Application",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Application\\CoursePlatform.Application.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Application\\CoursePlatform.Application.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Application\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj"
+              "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj": {
+    "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj",
         "projectName": "CoursePlatform.Domain",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Domain\\CoursePlatform.Domain.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\CoursePlatform_fixed\\Backend\\src\\CoursePlatform.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Downloads\\CoursePlatform_AE_1\\Backend\\src\\CoursePlatform.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"

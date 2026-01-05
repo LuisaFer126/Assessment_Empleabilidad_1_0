@@ -32,16 +32,23 @@ CoursePlatform/
 
 2. **Aplicar Migraciones**:
    Desde la carpeta `Backend`:
+
    ```bash
-   dotnet ef database update --project src/CoursePlatform.Infrastructure/CoursePlatform.Infrastructure.csproj --startup-project src/CoursePlatform.API/CoursePlatform.API.csproj
+   cd .\Backend
+   dotnet ef database update --project .\src\CoursePlatform.Infrastructure\CoursePlatform.Infrastructure.csproj --startup-project .\src\CoursePlatform.API\CoursePlatform.API.csproj
+
    ```
 
 3. **Ejecutar API**:
+
    ```bash
-   dotnet run --project src/CoursePlatform.API/CoursePlatform.API.csproj
+   cd .\Backend
+   dotnet run --project .\src\CoursePlatform.API\CoursePlatform.API.csproj
+
    ```
+
    La API estará disponible en `http://localhost:5032` (o similar, ver consola).
-   
+
    **Usuario de Prueba (Seed)**:
    - Email: `admin@test.com`
    - Password: `Admin123!`
@@ -50,6 +57,7 @@ CoursePlatform/
 
 1. **Instalar Dependencias**:
    Desde la carpeta `Frontend`:
+
    ```bash
    npm install
    ```
@@ -63,6 +71,7 @@ CoursePlatform/
 ## Funcionalidades Implementadas
 
 ### Backend
+
 - **Clean Architecture**: Separación clara en Domain, Application, Infrastructure.
 - **Entity Framework Core**: Code-first con MySQL y Migraciones.
 - **Identity + JWT**: Autenticación robusta.
@@ -73,6 +82,7 @@ CoursePlatform/
   - Reordenamiento.
 
 ### Frontend
+
 - **React Moderno**: Hooks, Functional Components.
 - **Diseño Premium**: Dark mode, Glassmorphism, CSS Variables, Lucide Icons.
 - **Gestión Completa**:
@@ -83,7 +93,9 @@ CoursePlatform/
 ## Tests
 
 Desde la carpeta `Backend`:
+
 ```bash
 dotnet test
 ```
+
 Se incluyen 5 tests unitarios validando las reglas de negocio principales.

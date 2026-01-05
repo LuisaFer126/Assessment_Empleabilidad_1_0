@@ -23,8 +23,10 @@ export default function Courses() {
     const [statusFilter, setStatusFilter] = useState<string>('');
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
-    const { logout } = useAuth();
+    const { logout, user } = useAuth();
     const navigate = useNavigate();
+
+    const hasToken = typeof window !== 'undefined' && !!localStorage.getItem('token');
 
     // Create Modal State
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,7 +45,12 @@ export default function Courses() {
             const data = response.data;
             setCourses(data.items);
             setTotalPages(Math.ceil(data.totalCount / data.pageSize));
-        } catch (error) {
+        } catch (error: any) {
+            if (error?.response?.status === 401) {
+                // JWT missing/invalid: clear storage and let PrivateRoute redirect.
+                logout();
+                return;
+            }
             console.error(error);
         } finally {
             setLoading(false);
@@ -83,9 +90,16 @@ export default function Courses() {
             {/* Header */}
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3rem' }}>
                 <h1 style={{ fontSize: '2rem', fontWeight: 'bold' }}>My Courses</h1>
-                <button onClick={logout} className="btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <LogOut size={18} /> Logout
-                </button>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    <div style={{ textAlign: 'right', color: 'var(--text-tertiary)', fontSize: '0.85rem', lineHeight: 1.3 }}>
+                        <div>{user?.email || ''}</div>
+                        <div>JWT: {hasToken ? 'stored' : 'missing'}</div>
+                    </div>
+                    <button onClick={logout} className="btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <LogOut size={18} /> Logout
+                    </button>
+                </div>
             </div>
 
             {/* Controls */}

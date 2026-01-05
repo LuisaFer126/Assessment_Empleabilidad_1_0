@@ -12,7 +12,9 @@ public record LessonDto(Guid Id, Guid CourseId, string Title, int Order);
 public record CreateLessonDto(Guid CourseId, string Title, int Order);
 public record UpdateLessonDto(string Title, int Order);
 
-public record CourseSummaryDto(Guid Id, string Title, int TotalLessons, DateTime UpdatedAt);
+// Summary for the course dashboard/detail view.
+// Business needs: basic course info + total lessons + last modified date.
+public record CourseSummaryDto(Guid Id, string Title, CourseStatus Status, int TotalLessons, DateTime LastModified);
 
 public record LoginDto(string Email, string Password);
 public record RegisterDto(string Email, string Password);
